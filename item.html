@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carter's</title>
+  <!-- <link href="bootstrap-4.5.0-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />  -->
+  <link rel="stylesheet" href="./bootstrap-4.5.0-dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="./fontawesome-free-5.12.0-web/css/all.css">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body dir="rtl">
+  <nav class="navbar bg-carters" id="first_nav">
+  </nav>
+
+  <nav class="navbar navbar-expand-md sticky-top bg-white border-bottom shadow-sm py-4" id="div_links">
+    <!-- Links -->
+
+    <div class="justify-content-end mr-3 row" dir="ltr">
+      <a id="cart_pop" class="ml-2 cursor_pointer" data-toggle="popover"><i class="fa fa-shopping-cart"><span id="numCart"></span></i></a>
+      <div id="account" class="">
+        <a class="ml-2 btn_icon cursor_pointer" data-toggle="modal" data-target="#sign_in_modal" id="account_modal"><i
+            class="fa fa-user-circle" aria-hidden="true"></i></a>
+        <a id="account_pop" type="button" class="ml-2 btn_icon cursor_pointer d-none"><i class="fa fa-user-circle"
+            aria-hidden="true"></i></a>
+
+        <a id="customer_name" class="smallest_text">התחברות</a>
+      </div>
+    </div>
+    <form class="form-inline mr-3" action="/action_page.php">
+      <input class="form-control mr-sm-2 form-control-sm  text-left" type="text" placeholder="...Search" list="search_item"
+        id="input_search">
+      <datalist id="search_item"></datalist>
+    </form>
+    <button type="button" class="navbar-toggler  carters_color" data-toggle="collapse" data-target="#nav">
+
+      <i class="fa fa-align-justify" aria-hidden="true"></i>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center text-right" id="nav">
+      <ul id="nav2" class="navbar-nav justify-content-center ">
+        <!-- Dropdown -->
+        <li class="nav-item dropdown ">
+          <a class="category nav-link  link-color " href="#" id="Boys" data-target="#try">
+            בנים
+          </a>
+          <ul id="try" class="text-right">
+            <li>
+              <h6 class="mr-3"> קטגוריות </h6>
+            </li>
+            <li><a name="בנים" class=" link-color sub_category">חליפות ווסטים</a></li>
+            <li><a name="בנים" class=" link-color  sub_category">מכנסיים</a></li>
+            <li><a name="בנים" class=" link-color  sub_category">חולצות</a></li>
+            <li><a name="בנים" class="link-color  sub_category">סוודרים וקרדיגנים</a></li>
+            <li><a name="בנים" class=" link-color  sub_category">מעילים וז'קטים</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown ">
+          <a class=" nav-link link-color category" href="#" id="Girls">
+            בנות
+          </a>
+          <ul id="try" class="text-right">
+            <li>
+              <h6 class="mr-3"> קטגוריות </h6>
+            </li>
+            <li><a name="בנות" class="link-color  sub_category ">שמלות</a></li>
+            <li><a name="בנות" class="link-color  sub_category">חולצות</a></li>
+            <li><a name="בנות" class=" link-color  sub_category">חצאיות</a></li>
+            <li><a name="בנות" class="link-color  sub_category">סוודרים וקרדיגנים</a></li>
+            <li><a name="בנות" class=" link-color  sub_category">מעילים וז'קטים</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown  ">
+          <a class=" nav-link  link-color category" href="category.html" id="Baby_Boy">
+            תינוקות בנים
+          </a>
+          <ul id="try" class="text-right">
+            <li>
+              <h6 class="mr-3"> קטגוריות </h6>
+            </li>
+            <li><a name="תינוקות בנים" class=" link-color sub_category ">בגדי גוף</a></li>
+            <li><a name="תינוקות בנים" class=" link-color sub_category ">סטים</a></li>
+            <li><a name="תינוקות בנים" class=" link-color sub_category ">פיג'מות אוברול</a></li>
+            <li><a name="תינוקות בנים" class="link-color sub_category ">חולצות</a></li>
+            <li><a name="תינוקות בנים" class=" link-color sub_category ">מכנסיים וטייצים</a></li>
+            <li><a name="תינוקות בנים" class=" link-color sub_category ">מעילים וז'קטים</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link   link-color category" href="category.html" id="Baby_Girl">
+            תינוקות בנות
+          </a>
+          <ul id="try" class="text-right">
+            <li>
+              <h6 class="mr-3"> קטגוריות </h6>
+            </li>
+            <li><a name="תינוקות בנות" class=" link-color sub_category ">שמלות</a></li>
+            <li><a name="תינוקות בנות" class=" link-color sub_category ">חולצות</a></li>
+            <li><a name="תינוקות בנות" class=" link-color sub_category ">סטים</a></li>
+            <li><a name="תינוקות בנות" class=" link-color sub_category ">בגדי גוף</a></li>
+            <li><a name="תינוקות בנות" class=" link-color sub_category ">פיג'מות אוברול</a></li>
+            <li><a name="תינוקות בנות" class="link-color sub_category ">מעילים וז'קטים</a></li>
+
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link link-color category" href="category.html" id="new-born">
+            new-born
+          </a>
+          <ul id="try" class="text-right">
+            <li>
+              <h6 class="mr-3"> קטגוריות </h6>
+            </li>
+            <li><a class=" link-color sub_category " name="new-born">חולצות</a></li>
+            <li><a class=" link-color sub_category 
+              " name="new-born">סטים</a></li>
+            <li><a class=" link-color sub_category " name="new-born">בגדי גוף</a></li>
+            <li><a class=" link-color sub_category " name="new-born">פיג'מות אוברול</a></li>
+            <li><a class=" link-color sub_category " name="new-born">מעילים וז'קטים</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <a href="/home.html"><img class="w-50 ml-3 sm-row" src="pics/logologo.png" alt=""></a>
+  </nav>
+
+  <div class="container">
+    <div class="row mt-4" id="show_item">
+    </div>
+  </div>
+  <!--modal-->
+  <div id="my_modal">
+    <div class="modal fade" id="sign_in_modal" tabindex="-1" role="dialog" aria-labelledby="enter_label" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="enter_label">כניסה</h5>
+            <button id="btn_x_modal" type="button" class="close ml-0" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body container-fluid text-right">
+            <div class="row">
+              <div class="col border-left">
+                <form name="exist_details">
+                  <h5 class="h5">לקוחות רשומים לאתר</h5>
+                  <label class="label_up">אימייל</label>
+                  <input type="text" class="form-control" name="email">
+                  <label id="not_exist_email" class="text-danger small d-none row mr-1">דוא"ל אינו רשום במערכת</label>
+                  <label class="label_up">סיסמה</label>
+                  <input type="password" class="form-control" name="password">
+                  <label id="not_exist_password" class="text-danger small d-none row mr-1">הסיסמה אינה תקינה</label>
+                  <button class="btn carters_color ml-2 mt-3">התחברות</button>
+                  <a class="small_text" href="#">שכחת סיסמה?</a>
+                </form>
+              </div>
+              <div class="col">
+                <h5 class="h5">לקוחות חדשים</h5>
+                <p class="small_text">!פעם ראשונה באתר? כדאי לכם להירשם
+                  כלקוחות רשומים תוכלו להזמין מוצרים בזריזות ובקלות, לשמור מוצרים שאהבתם, לעקוב אחר
+                  ההזמנות שלכם ועוד . על מנת להינות מההטבות היחודיות לחברי מועדון יש להצטרף לחבר
+                  מועדון בסל או להזדהות כמועדון בתהליך ההרשמה
+                  ההצטרפות למועדון מתבצעת בתהליך הקניה </p>
+                <form>
+                  <button type="button" class="btn carters_color" id="btn_create_account">צור חשבון</button>
+                </form>
+              </div>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn carters_color" data-dismiss="modal">סגור</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--end modal-->
+
+  <div id="footer" class="container-fluid text-right carters_footer" style="font-family: Calibri; font-size: 1em;">
+    <div class="row  border-bottom border-top  py-4">
+      <div class="col d-flex justify-content-center border-left">
+        <ul class=" ">
+          <li class="item_name mb-3 mx-2" style=" font-weight: bold;">עזרה</li>
+          <li class="my-2"><a href="sign_in.html">החשבון שלי</a></li>
+          <li class="my-2"><a href="#footer">מידע על החזרות</a></li>
+          <li class="my-2"><a href="#footer">פרטי משלוח</a></li>
+          <li class="my-2"><a href="#footer">צור קשר</a></li>
+          <li class="my-2"><a href="#footer">מפת האתר</a></li>
+          <li class="my-2"><a href="#footer">שאלות נפוצות</a></li>
+        </ul>
+      </div>
+      <div class="col d-flex justify-content-center  border-left">
+        <ul>
+          <li class="item_name mb-3 mx-2" style=" font-weight: bold;">אודות</li>
+
+          <li class="my-2"><a href="#footer">אודותינו</a></li>
+          <li class="my-2"><a href="#footer">הסניפים שלנו</a></li>
+          <li class="my-2"><a href="#footer">הסיפור שלנו</a></li>
+          <li class="my-2"><a href="#footer">מועדון לקוחות</a></li>
+          <li class="my-2"><a href="#footer">טבלת מידות</a></li>
+          <li class="my-2"><a href="#footer">הצהרת נגישות</a></li>
+        </ul>
+      </div>
+      <div class="col d-flex justify-content-center ">
+        <ul>
+          <li class="item_name mb-3 mx-2" style=" font-weight: bold;">פרטיות וחוקיות</li>
+
+          <li class="my-2"><a href="#footer">מדיניות פרטיות</a></li>
+          <li class="my-2"><a href="#footer">תקנון ותנאי שימוש</a></li>
+
+        </ul>
+      </div>
+    </div>
+    <div class="row justify-content-center" style="margin: 4% 4%;">
+      <a href="javascript:void(0);" class="mx-2"><i class="fab fa-instagram social_networks"></i></a><!-- -square -->
+      <a href="javascript:void(0);" class="mx-2"><i class="fab fa-twitter text-info social_networks"></i></a><!-- -square -->
+      <a href="javascript:void(0);" class="mx-2"><i class="fab fa-facebook-square text-info social_networks" style="color: #4b5e96 !important"></i></a>
+      <a href="javascript:void(0);" class="mx-2"><i class="fab fa-pinterest text-danger social_networks"></i></a><!-- -p or -square-->
+      <a href="javascript:void(0);" class="mx-2"><i class="fab fa-youtube text-black social_networks"></i></a><!-- -square -->
+    </div>
+  </div>
+
+  <script src="jquery-3.5.1.js"></script>
+  <script src="bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+  <script src="bootstrap-4.5.0-dist/js/bootstrap.bundle.js"></script>
+  <script src="universal.js"></script>
+  <script src="item.js"></script>
+</body>
+
+</html>
